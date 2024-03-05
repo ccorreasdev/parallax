@@ -48,6 +48,21 @@ body {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .nav__layout {
+    flex-direction: column;
+  }
+
+  .nav__navbar {
+    display: flex;
+    gap: 10px;
+  }
+
+  .nav__option {
+    padding: 8px 10px;
+  }
+}
+
 .nav__option--active {
   background-color: #5247b9;
 }
@@ -72,7 +87,7 @@ body {
   position: absolute;
   top: 0%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 80%);
   color: white;
   z-index: 99;
   font-size: 8rem;
