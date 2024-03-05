@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "PoppinsR";
+  src: url("/assets/font/Poppins/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "PoppinsR";
+  font-size: 1.8rem;
+}
+
+.nav__layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0px 5%;
+  position: absolute;
+  width: 100%;
+  z-index: 200;
+}
+
+.nav__title {
+  font-size: 4rem;
+  color: white;
+}
+
+.nav__navbar {
+  display: flex;
+  gap: 30px;
+}
+
+.nav__option {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 8px 16px;
+  border-radius: 99px;
+  transition: all 300ms ease-in-out;
+  color: white;
+}
+
+.nav__option--active {
+  background-color: #5247b9;
+}
+
+.nav__option:hover {
+  background-color: #5247b9;
+}
+
+.nav__navbar:hover > .nav__option:not(:hover) {
+  background-color: none;
+}
+
+.home {
+  display: flex;
+  height: 100dvh;
+  background: linear-gradient(to top, #5e83a6 30%, #273244);
+  position: relative;
+  overflow: hidden;
+}
+
+.home__title {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: white;
+  z-index: 99;
+  font-size: 8rem;
+  text-shadow: 2px 2px 5px #0000002e;
+}
+
+.home img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.cloud_lonely {
+}
+
+.clouds_bg {
+  z-index: 99;
+}
+
+.clouds_mg_1 {
+}
+
+.clouds_mg_1_lightened {
+}
+
+.clouds_mg_2 {
+}
+
+.clouds_mg_3 {
+}
+
+.glacial_mountains {
+  z-index: 99;
+}
+
+.glacial_mountains_lightened {
+}
+
+.sky {
+}
+
+.sky_lightened {
+}
+
+.about__layout {
+  padding: 5rem;
+  background-color: #5e83a6;
+  color: white;
+  position: relative;
+  z-index: 100;
+}
+
+.about__title {
+  font-size: 4rem;
+}
